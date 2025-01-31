@@ -43,23 +43,23 @@ func gameLoop() {
 func easyDifficulty() {
 	fmt.Println("Great! You have selected the Easy difficulty level.")
 	fmt.Println("Let's start the game!")
-    fmt.Println()
+	fmt.Println()
 
 	randomNumber := rand.Intn(101)
 	attempts := 0
 	attempsCap := 10
 
 	for attempts < attempsCap {
-        fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
+		fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
 
 		var guess int
 		_, err := fmt.Scanln(&guess)
 		if err != nil {
 			fmt.Println("Invalid input. Please enter a number.")
-            continue
+			continue
 		}
 
-        attempts++
+		attempts++
 
 		switch {
 		case guess < randomNumber:
@@ -72,29 +72,29 @@ func easyDifficulty() {
 		}
 	}
 
-    fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
+	fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
 }
 
 func mediumDifficulty() {
-    fmt.Println("Great! You have selected the Medium difficulty level.")
+	fmt.Println("Great! You have selected the Medium difficulty level.")
 	fmt.Println("Let's start the game!")
-    fmt.Println()
+	fmt.Println()
 
 	randomNumber := rand.Intn(101)
 	attempts := 0
 	attempsCap := 5
 
 	for attempts < attempsCap {
-        fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
+		fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
 
 		var guess int
 		_, err := fmt.Scanln(&guess)
 		if err != nil {
 			fmt.Println("Invalid input. Please enter a number.")
-            continue
+			continue
 		}
 
-        attempts++
+		attempts++
 
 		switch {
 		case guess < randomNumber:
@@ -107,29 +107,29 @@ func mediumDifficulty() {
 		}
 	}
 
-    fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
+	fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
 }
 
 func hardDifficulty() {
-    fmt.Println("Great! You have selected the Easy difficulty level.")
+	fmt.Println("Great! You have selected the Easy difficulty level.")
 	fmt.Println("Let's start the game!")
-    fmt.Println()
+	fmt.Println()
 
 	randomNumber := rand.Intn(101)
 	attempts := 0
 	attempsCap := 10
 
 	for attempts < attempsCap {
-        fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
+		fmt.Printf("Enter your guess: (%d attempts remaining): ", attempsCap-attempts)
 
 		var guess int
 		_, err := fmt.Scanln(&guess)
 		if err != nil {
 			fmt.Println("Invalid input. Please enter a number.")
-            continue
+			continue
 		}
 
-        attempts++
+		attempts++
 
 		switch {
 		case guess < randomNumber:
@@ -142,7 +142,7 @@ func hardDifficulty() {
 		}
 	}
 
-    fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
+	fmt.Println("Uh oh! You ran out of attempts! The correct number was:", randomNumber)
 }
 
 func main() {
